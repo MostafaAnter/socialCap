@@ -15,3 +15,8 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+############################################################
+# this belong firebase :)
+-keep class com.firebase.** { *; }
+-dontwarn com.fasterxml.**
+
