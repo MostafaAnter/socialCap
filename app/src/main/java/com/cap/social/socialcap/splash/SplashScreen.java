@@ -5,6 +5,7 @@ import android.content.Intent;
 
 import com.cap.social.socialcap.MainActivity;
 import com.cap.social.socialcap.R;
+import com.cap.social.socialcap.log_in_and_registration.SignInActivity;
 import com.daimajia.androidanimations.library.Techniques;
 import com.viksaa.sssplash.lib.activity.AwesomeSplash;
 import com.viksaa.sssplash.lib.cnst.Flags;
@@ -61,9 +62,16 @@ public class SplashScreen extends AwesomeSplash {
 
     @Override
     public void animationsFinished() {
-
-        //transit to another activity here
-        //or do whatever you want
-        startActivity(new Intent(SplashScreen.this, MainActivity.class));
+        boolean checkVar = false;
+        /* check if user sign in before of not */
+        if(checkVar){
+            Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        }else {
+            Intent intent = new Intent(SplashScreen.this, SignInActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        }
     }
 }
