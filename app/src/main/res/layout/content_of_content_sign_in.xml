@@ -23,6 +23,9 @@
 
             <EditText
                 android:id="@+id/edit_email"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_email_24dp"
@@ -37,11 +40,14 @@
 
             <EditText
                 android:id="@+id/edit_password"
+                android:singleLine="true"
+                android:maxLines="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textPassword"
                 android:drawableLeft="@drawable/ic_password"
                 android:drawablePadding="8dp"
-                android:hint="Email" />
+                android:hint="Password" />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
 

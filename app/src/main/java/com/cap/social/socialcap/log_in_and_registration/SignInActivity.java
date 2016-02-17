@@ -5,15 +5,21 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.EditText;
 
 import com.cap.social.socialcap.R;
 import com.cap.social.socialcap.utils.Component;
 
 public class SignInActivity extends AppCompatActivity {
+    // ui elements
+    private TextInputLayout email_input_layout
+            , userName_input_layout;
+    private EditText emailEditText
+            , passwordEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

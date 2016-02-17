@@ -19,4 +19,16 @@
 # this belong firebase :)
 -keep class com.firebase.** { *; }
 -dontwarn com.fasterxml.**
+# this belong butter knife
+-keep class butterknife.** { *; }
+-dontwarn butterknife.internal.**
+-keep class **$$ViewBinder { *; }
+
+-keepclasseswithmembernames class * {
+    @butterknife.* <fields>;
+}
+
+-keepclasseswithmembernames class * {
+    @butterknife.* <methods>;
+}
 
