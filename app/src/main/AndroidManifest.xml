@@ -33,11 +33,11 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".log_in_and_registration.SignInActivity"
-            android:label="@string/title_activity_sign_in"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".log_in_and_registration.RegistrationActivity"
-            android:label="@string/title_activity_registration"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 

@@ -57,7 +57,7 @@
         android:paddingTop="40dp">
 
         <ImageButton
-            android:id="@+id/facebook_button"
+            android:onClick="login_with_facebook"
             style="@android:style/Widget.Holo.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             android:src="@drawable/facebook_logo" />
 
         <ImageButton
-            android:id="@+id/google_plus_button"
+            android:onClick="login_with_google"
             style="@android:style/Widget.Holo.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
             android:src="@drawable/google_logo" />
 
         <ImageButton
-            android:id="@+id/tweeter_button"
+            android:onClick="login_with_twitter"
             style="@android:style/Widget.Holo.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -86,6 +86,7 @@
 
     <Button
         android:id="@+id/login_button"
+        android:onClick="login_with_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/social_network"
@@ -94,7 +95,7 @@
         android:textColor="#ffffff" />
 
     <TextView
-        android:id="@+id/txt_already_have"
+        android:onClick="retrieve_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/login_button"
