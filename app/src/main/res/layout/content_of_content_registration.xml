@@ -83,9 +83,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/social_network"
         android:layout_marginTop="40dp"
-        android:background="@color/colorAccent"
+        android:background="@drawable/selectable_button"
         android:text="GET STARTED"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:onClick="createUserAccount"/>
 
 </LinearLayout>
 
